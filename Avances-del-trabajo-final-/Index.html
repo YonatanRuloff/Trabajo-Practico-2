@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto</title>
+    <link rel="stylesheet" href="../Css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="../Avances-del-trabajo-final-/Imagenes/logo2.jpg" width="100px" height="100px" alt="Logo Campeones del Mundo">
+        <h1>Campeones del Mundo</h1>
+        <h2>Todo lo que necesitas para llevar tu juego al siguiente nivel</h2>
+    </header>
+    <nav>
+        <a href="../Avances-del-trabajo-final-/Index.html">Home</a>
+        <a href="../Views/Grasep.html">Grasep</a>
+        <a href="../Views/Adidas.html">Adidas</a>
+        <a href="../Views/Nike.html">Nike</a>
+        <a href="../Views/Umbro.html">Umbro</a>
+        <a href="../Views/Carrito.html">Carrito</a>
+    </nav>
+    <button id="theme-toggle">Cambiar Tema</button>
+    <main>
+        <div class="catalogo">
+            <a href="../Views/Grasep.html"><img src="../Avances-del-trabajo-final-/Imagenes/logo-grasep.jpg" title="Grasep" alt="Grasep" width="200px"
+                    height="200px"></a>
+            <a href="../Views/Adidas.html"><img src="../Avances-del-trabajo-final-/Imagenes/logo-adidas.jpg" title="Adidas" alt="Adidas" width="200px"
+                    height="200px"></a>
+            <a href="../Views/Nike.html"><img src="../Avances-del-trabajo-final-/Imagenes/logo-nike.jpg" title="Nike" alt="Nike" width="200px"
+                    height="200px"></a>
+            <a href="../Views/Umbro.html"><img src="../Avances-del-trabajo-final-/Imagenes/logo-umbro.jpg" title="Umbro" alt="Umbro" width="200px"
+                    height="200px"></a>
+        </div>
+        <br>
+        <!-- Sección de noticias o promociones -->
+        <section class="noticias">
+            <h2>Promociones Especiales</h2>
+            <div class="noticia">
+                <img src="../Avances-del-trabajo-final-/Imagenes/zapatilla-promocion.jpg" alt="Zapatillas en promoción">
+                <div class="contenido-noticia">
+                    <h3>Zapatillas Adidas en Promoción</h3>
+                    <p class="descripcion" style="display: none;">Aprovecha nuestra oferta especial en zapatillas Adidas. Obtén un 20% de descuento por tiempo limitado.</p>
+                    <p class="likes">
+                        <button class="likes-button">❤️</button>
+                        <span>0</span>
+                    </p>
+                    <button class="toggle-description">Mostrar más</button>
+                    <a href="../Views/Adidas.html" class="boton-promocion">Ver Producto</a>
+                </div>
+            </div> 
+            <div class="noticia">
+                <img src="../Avances-del-trabajo-final-/Imagenes/promocion-grasep.jpg" alt="Césped en promoción">
+                <div class="contenido-noticia">
+                    <h3>Césped Sintético en Oferta</h3>
+                    <p class="descripcion" style="display: none;">Renueva tu campo de juego con el mejor césped sintético a precios rebajados. No te lo pierdas.</p>
+                    <p class="likes">
+                        <button class="likes-button">❤️</button>
+                        <span>0</span>
+                    </p>
+                    <button class="toggle-description">Mostrar más</button>
+                    <a href="../Views/Grasep.html" class="boton-promocion">Ver Producto</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Campeones del Mundo. Todos los derechos reservados.</p>
+        <p>Desarrollado por Ruloff Yonatan David</p>
+    </footer>
+    <script>
+        const themeToggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+        themeToggleButton.addEventListener('click', function () {
+            body.classList.toggle('dark-mode');
+        });
+        // Seleccionar todas las tarjetas de noticias/promociones
+        const noticias = document.querySelectorAll('.noticia');
+        // Añadir un evento 'mouseover' y 'mouseout' para cada tarjeta
+        noticias.forEach(noticia => {
+            const imagen = noticia.querySelector('img');
+            const descripcion = noticia.querySelector('.descripcion');
+            const likesSpan = noticia.querySelector('.likes span');
+            let likesCount = 0;
+            // Evento para aumentar el tamaño de la imagen al pasar el cursor
+            noticia.addEventListener('mouseover', () => {
+                imagen.style.transform = 'scale(1.1)';
+                imagen.style.transition = 'transform 0.3s ease-in-out';
+            });
+            noticia.addEventListener('mouseout', () => {
+                imagen.style.transform = 'scale(1)';
+            });
+            // Evento para mostrar/ocultar descripción
+            const toggleButton = noticia.querySelector('.toggle-description');
+            toggleButton.addEventListener('click', () => {
+                if (descripcion.style.display === 'none') {
+                    descripcion.style.display = 'block';
+                    toggleButton.textContent = 'Mostrar menos';
+                } else {
+                    descripcion.style.display = 'none';
+                    toggleButton.textContent = 'Mostrar más';
+                }
+            });
+            //  Dar "me gusta"
+            const likesButton = noticia.querySelector('.likes');
+            likesButton.addEventListener('click', () => {
+                likesCount++;
+                likesSpan.textContent = likesCount;
+            });
+        });
+    </script>
+</body>
+</html>
+

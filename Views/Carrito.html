@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra</title>
+    <link rel="stylesheet" href="../Css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="../Avances-del-trabajo-final-/Imagenes/logo2.jpg" width="100px" height="100px" alt="Logo Campeones del mundo">
+        <h1>Campeones del Mundo</h1>
+        <h2>Todo lo que necesitas para llevar tu juego al siguiente nivel</h2>
+    </header>
+    <nav>
+        <a href="../Avances-del-trabajo-final-/Index.html">Home</a>
+        <a href="../Views/Grasep.html">Grasep</a>
+        <a href="../Views/Adidas.html">Adidas</a>
+        <a href="../Views/Nike.html">Nike</a>
+        <a href="../Views/Umbro.html">Umbro</a>
+        <a href="../Views/Carrito.html">Carrito</a> 
+    </nav>
+    <br>
+    <form>
+        <h2>Formulario de Compra</h2>
+        <p class="instrucciones">Gracias por su compra; ahora para finalizar coloque sus datos y enliste sus productos</p>       
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>       
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Escribe tu correo" required>      
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono" required>    
+        <label for="productos">Productos seleccionados:</label>
+        <textarea id="productos" name="productos" placeholder="Escribe aquí los productos que seleccionaste" rows="4" required></textarea>
+        <!-- Métodos de pago -->
+        <fieldset>
+            <legend>Método de Pago</legend>
+            <label>
+                <input type="radio" name="metodo_pago" value="tarjeta" required> Tarjeta de Crédito o Débito
+            </label>
+            <label>
+                <input type="radio" name="metodo_pago" value="transferencia" required> Transferencia Bancaria
+            </label>
+            <label>
+                <input type="radio" name="metodo_pago" value="billeteras" required> Billeteras Virtuales
+            </label>
+        </fieldset>
+        <input type="submit" value="Finalizar Compra">
+    </form>
+    <footer>
+        <p>&copy; 2024 Campeones del Mundo. Todos los derechos reservados.</p>
+        <p>Desarrollado por Ruloff Yonatan David</p>
+    </footer>
+</body>
+</html>

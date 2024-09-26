@@ -1,0 +1,406 @@
+/* Ajusta fuente; fondo; etc */
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    color: #fff;
+    margin: 10;
+    padding: 10;
+}
+/* Logo y titulo */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(106, 193, 252);
+}
+header img {
+    display: block;
+    margin: 0 auto;
+}
+/* Enlaces */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+}
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+nav a:hover {
+    color: #000000;
+}
+/* contenido central de la pagina */
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+main h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color:rgb(0, 153, 255);
+}
+main h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Catalogo de productos */
+.catalogo {
+    display: flex;
+    justify-content: flex-start; /* Alinea a la izquierda */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en varias líneas si es necesario */
+    margin-left: 80px; /* Ajuste a la izquierda */
+}
+.catalogo a {
+    margin: 10px; /* Espacio entre los botones */
+}
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+/* Estilo para el logo */
+p.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d32f2f;
+    /* Color rojo oscuro, característico de Dexter */
+    margin-left: 20px;
+}
+/* Estilo del catalogo de enlaces */
+nav {
+    background-color: #000000;
+    padding: 10px 0;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #ffffff;
+}
+/* Título principal */
+h1 {
+    font-size: 36px;
+    color: #000000;
+    margin: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* Buscador */
+p.buscador {
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+/* imagenes como botones estilo */
+a img {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, border-color 0.3s;
+    display: inline-block;
+    margin: 10px;
+}
+a img:hover {
+    transform: scale(1.05);
+    border-color: rgb(106, 193, 252);
+}
+form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+form h2 {
+    color: rgb(0, 153, 255);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+form p.instrucciones {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #444;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Bordes más redondeados */
+    font-size: 16px;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+form input[type="submit"] {
+    background-color: rgb(0, 153, 255);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+form input[type="submit"]:hover {
+    background-color: rgb(0, 120, 220); /* Cambia el color al pasar el mouse */
+}
+form textarea {
+    resize: none; /* Evita que el usuario redimensione el campo */
+}
+/* Estilo para el campo de método de pago */
+fieldset {
+    border: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+fieldset label {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+fieldset input[type="radio"] {
+    margin-right: 10px;
+}
+footer {
+    background-color: rgb(106, 193, 252);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 0px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+}
+footer p {
+    margin: 5px 0;
+}
+/* productos en forma de caja box solo para la pagina de adidas*/
+.product-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.product-box img {
+    border-radius: 10px;
+}
+.product-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* estilo que describe el producto en este caso solo lo utilice en umbro*/
+.product-ficha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+.ficha-detalle {
+    max-width: 400px;
+}
+.ficha-detalle h4 {
+    margin-bottom: 10px;
+}
+.product-ficha img {
+    border-radius: 10px;
+}
+/* Cambio de color de pantalla */
+.dark-mode {
+    background-color: rgb(0, 153, 255);
+    color: white;
+}
+/* Estilo para el menú en pantallas grandes */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 0;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+nav a:hover {
+    color: #ffffff;
+}
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        align-items: center;    /* Centra los elementos del menú */
+        padding: 0;
+    }
+    nav a {
+        display: block; /* Hace que cada enlace ocupe todo el ancho disponible */
+        margin: 10px 0; /* Añade un espacio vertical entre los enlaces */
+        font-size: 20px; /* Ajusta el tamaño de la fuente */
+        width: 100%;     /* Asegura que los enlaces ocupen todo el ancho del menú */
+        text-align: center; /* Centra el texto de los enlaces */
+    }
+}
+/* Sección de noticias/promociones */
+.noticias {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.noticias h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+/* Estilo para cada noticia */
+.noticia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.noticia img {
+    max-width: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.contenido-noticia {
+    max-width: 400px;
+    text-align: left;
+}
+.contenido-noticia h3 {
+    font-size: 22px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+.contenido-noticia p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+/* Responsive para la parte de las promociones*/
+@media (max-width: 768px) {
+    .noticia {
+        flex-direction: column;
+        text-align: center;
+    }   
+    .noticia img {
+        margin-bottom: 20px;
+    }
+}
+/* Estilo para el botón "Ver Producto" */
+.boton-promocion {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(0, 153, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.boton-promocion:hover {
+    background-color: rgb(0, 120, 220);
+}
+/* Estilo para el botón "Me gusta" */
+.me-gusta {
+    background: none;
+    border: none;
+    color: rgb(0, 153, 255);
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.me-gusta .heart {
+    margin-right: 5px;
+    transition: color 0.3s;
+}
+.me-gusta:hover .heart {
+    color: red; /* Cambia el color del corazón al pasar el mouse */
+}
+/* Centrar las marcas en el catálogo */
+.catalogo {
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    flex-wrap: wrap;
+}
+/* Estilo para la sección de promociones */
+.noticias {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.noticia {
+    margin: 20px;
+}
